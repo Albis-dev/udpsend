@@ -1,0 +1,27 @@
+    {
+    "EL3K": {
+        "inherits": [
+            "MCU_STM32F4"
+        ],
+        "extra_labels_add": [
+            "STM32F4",
+            "STM32F429xI"
+        ],
+        "macros_add": [
+            "STM32F429xx",
+            "USE_USER_DEFINED_HAL_ETH_MSPINIT"
+        ],
+        "device_has_add": [
+            "ANALOGOUT",
+            "EMAC",
+            "ETHERNET"
+        ],
+        "detect_code": [
+            "0796"
+        ],
+        "device_name": "STM32F429ZI",
+        "overrides": {
+            "network-default-interface-type": "ETHERNET"
+        }
+    }
+}

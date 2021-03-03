@@ -1,0 +1,16 @@
+{
+    "target_overrides": {
+        "K64F": {
+            "platform.stdio-baud-rate": 9600
+        },
+        "EL3K": {
+            "stm32-emac.eth-phy-address": 1,
+            "stm32-emac.eth-phy-AutoNegotiation": "ETH_AUTONEGOTIATION_ENABLE",
+            "stm32-emac.eth-phy-DuplexMode": "ETH_MODE_FULLDUPLEX",
+            "stm32-emac.eth-phy-Speed": "ETH_SPEED_100M"
+        },
+        "*": {
+            "platform.callback-nontrivial": true
+        }
+    }
+}
